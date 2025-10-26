@@ -55,7 +55,7 @@ Where:
 
 ## Repository Contents
 
-- `KAUST_Numerical_Optimization_project_report.pdf` - Full research paper
+- `KAUST_Numerical_Optimization_project_report.pdf` - Project Report
 - `Project_Experiments.ipynb` - Main experiments (2D Rosenbrock tests)
 - `100_d_Experiment.ipynb` - High-dimensional scaling experiments
 - `Randomization_and_normalization_ablations.ipynb` - Testing 8 different configurations
