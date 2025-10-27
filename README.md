@@ -26,7 +26,7 @@ Where:
 
 **The hypothesis**: By introducing randomness, we might occasionally find better descent paths than the pure gradient, especially when dealing with elongated valleys characteristic of poorly conditioned problems.
 
-## What I Found
+## What We Found
 
 **TL;DR**: It works beautifully in low dimensions (< 10), but performance falls off a cliff as dimensionality increases.
 
@@ -121,32 +121,8 @@ return x
 - Adds computational overhead
 - Stochastic behavior can be unpredictable
 
-## Reflections
 
-This was an experimental exploration of an interesting idea. While it didn't result in a universally applicable algorithm, the journey was valuable:
-
-1. Sometimes simple ideas work in constrained settings
-2. The curse of dimensionality is unforgiving
-3. Intuition from low dimensions doesn't always scale
-4. Negative results are results too
-
-The method shows that randomization can genuinely help with poorly conditioned problems - just not in the high-dimensional regime where many modern ML problems live.
-
-## Authors
+## Contributers
 
 **Ali Allail** & **Maryam Almaskin**
 King Abdullah University of Science and Technology (KAUST), 2024
-
-## References
-
-[1] Zhang, L., Mahdavi, M., & Jin, R. (2013). Linear convergence with condition number independent access of full gradients. *NeurIPS*.
-
-[2] Qu, Z., & Richtárik, P. (2016). Coordinate descent with arbitrary sampling I: Algorithms and complexity. *Optimization Methods and Software*.
-
-[3] Kingma, D. P., & Ba, J. (2014). Adam: A method for stochastic optimization. *arXiv:1412.6980*.
-
-[4] Qu, Z., & Richtárik, P. (2016). Coordinate descent with arbitrary sampling II: Expected separable overapproximation. *Optimization Methods and Software*.
-
----
-
-*Sometimes the most interesting research is seeing where an idea breaks.*
